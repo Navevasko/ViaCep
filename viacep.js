@@ -17,7 +17,7 @@ const pesquisarCep = async (cep) => {
 }
 
 const preencherFormulario = async (evento) => {
-    const cep = evento.target.value
+    const cep = evento.target.value.replace('-', '')
     if(cep === '' ) return 0
     limparCampos()
 
